@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c0b62195-18bd-4f66-86ac-f32abd5373c9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:53054/BasketService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BasketService.xsd" MetadataType="Schema" ID="b2dc628c-eac8-4f64-ab5e-f5cc8e0acd5f" SourceId="1" SourceUrl="http://localhost:53054/BasketService.svc?xsd=xsd2" />
+    <MetadataFile FileName="BasketService.wsdl" MetadataType="Wsdl" ID="90c6d166-3bff-417a-82e7-56fb25d741b3" SourceId="1" SourceUrl="http://localhost:53054/BasketService.svc?wsdl" />
+    <MetadataFile FileName="BasketService1.xsd" MetadataType="Schema" ID="c638f7f7-58fe-48c4-b0f9-c29264ae0fa1" SourceId="1" SourceUrl="http://localhost:53054/BasketService.svc?xsd=xsd1" />
+    <MetadataFile FileName="BasketService.disco" MetadataType="Disco" ID="733500f9-ecba-4529-815d-844da9303726" SourceId="1" SourceUrl="http://localhost:53054/BasketService.svc?disco" />
+    <MetadataFile FileName="BasketService2.xsd" MetadataType="Schema" ID="db4a69d1-e26b-4b7f-acc5-f7d38e660d11" SourceId="1" SourceUrl="http://localhost:53054/BasketService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

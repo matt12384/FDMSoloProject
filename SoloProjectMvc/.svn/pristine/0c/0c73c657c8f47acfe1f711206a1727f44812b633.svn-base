@@ -1,0 +1,17 @@
+﻿@model IEnumerable<SoloProjectMvc.ProductReference.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Search</h2>
+@*<img src= "@Url.Content("https://cdn0.vox-cdn.com/thumbor/kwBdLf1OMEZT9riNknVOBamnqBI=/cdn0.vox-cdn.com/uploads/chorus_asset/file/4107658/5x.0.png")" alt="IMAGES" />*@
+<p>
+    @using (Html.BeginForm("Index", "Product", FormMethod.Get))
+    {
+    <p>
+        @Html.TextBox("SearchString")
+        <input type="submit" value="Search" class="btn btn-default" />
+    </p>
+    }
+    </p>

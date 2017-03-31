@@ -1,0 +1,42 @@
+﻿@model IEnumerable<SoloProjectMvc.UserReference.User>
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Your Details</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            Email Address
+        </th>
+        <th>
+            First Name
+        </th>
+        <th>
+            Last Name
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmailAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+
+        <td>
+            @Html.ActionLink("Edit Details", "Edit", new { id = item.UserId }, new { @class = "btn btn-default" }) |
+            @Html.ActionLink("Change Password", "ChangePassword", new { id = item.UserId }, new { @class = "btn btn-default" })
+        </td>
+    </tr>
+}
+
+</table>

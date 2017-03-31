@@ -1,0 +1,25 @@
+﻿using ModelPoco;
+using SoloProject;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SoloProjectWcf
+{
+    public class AddressService : IAddressService
+    {
+        AddressRepository repository;
+
+        public AddressService()
+        {
+            repository = new AddressRepository();
+        }
+
+        public void AddAddressToUser(int userId, Address address)
+        {
+            repository.AddAddressToUser(userId, address);
+        }
+    }
+}
